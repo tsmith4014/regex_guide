@@ -2,37 +2,37 @@
 
 ## Table of Contents
 
-1. Introduction
-2. Basic Syntax of Regular Expressions
-   - 2.1. Literal Characters
-   - 2.2. Metacharacters
-3. Character Classes
-   - 3.1. Predefined Character Classes
-   - 3.2. Custom Character Classes
-4. Anchors and Boundaries
-   - 4.1. Line Anchors
-   - 4.2. Word Boundaries
-5. Quantifiers
-   - 5.1. Greedy vs. Non-Greedy Quantifiers
-6. Grouping and Backreferences
-   - 6.1. Capturing Groups
-   - 6.2. Backreferences
-7. Alternation
-8. Lookahead and Lookbehind Assertions
-   - 8.1. Positive and Negative Lookahead
-   - 8.2. Positive and Negative Lookbehind
-9. Common Command-Line Tools Utilizing Regex
-   - 9.1. grep
-   - 9.2. sed
-   - 9.3. awk
-   - 9.4. find
-10. Practical Examples
-    - 10.1. Searching for Patterns in Files
-    - 10.2. Modifying File Contents
-    - 10.3. System Administration Tasks
-11. Tips and Tricks
-12. Conclusion
-13. Additional Resources
+- [Introduction](#introduction)
+- [Basic Syntax of Regular Expressions](#basic-syntax-of-regular-expressions)
+  - [2.1. Literal Characters](#21-literal-characters)
+  - [2.2. Metacharacters](#22-metacharacters)
+- [Character Classes](#character-classes)
+  - [3.1. Predefined Character Classes](#31-predefined-character-classes)
+  - [3.2. Custom Character Classes](#32-custom-character-classes)
+- [Anchors and Boundaries](#anchors-and-boundaries)
+  - [4.1. Line Anchors](#41-line-anchors)
+  - [4.2. Word Boundaries](#42-word-boundaries)
+- [Quantifiers](#quantifiers)
+  - [5.1. Greedy vs. Non-Greedy Quantifiers](#51-greedy-vs-non-greedy-quantifiers)
+- [Grouping and Backreferences](#grouping-and-backreferences)
+  - [6.1. Capturing Groups](#61-capturing-groups)
+  - [6.2. Backreferences](#62-backreferences)
+- [Alternation](#alternation)
+- [Lookahead and Lookbehind Assertions](#lookahead-and-lookbehind-assertions)
+  - [8.1. Positive and Negative Lookahead](#81-positive-and-negative-lookahead)
+  - [8.2. Positive and Negative Lookbehind](#82-positive-and-negative-lookbehind)
+- [Common Command-Line Tools Utilizing Regex](#common-command-line-tools-utilizing-regex)
+  - [9.1. grep](#91-grep)
+  - [9.2. sed](#92-sed)
+  - [9.3. awk](#93-awk)
+  - [9.4. find](#94-find)
+- [Practical Examples](#practical-examples)
+  - [10.1. Searching for Patterns in Files](#101-searching-for-patterns-in-files)
+  - [10.2. Modifying File Contents](#102-modifying-file-contents)
+  - [10.3. System Administration Tasks](#103-system-administration-tasks)
+- [Tips and Tricks](#tips-and-tricks)
+- [Conclusion](#conclusion)
+- [Additional Resources](#additional-resources)
 
 ## Introduction
 
@@ -341,4 +341,3 @@ Regular expressions are indispensable tools for Linux administrators. They provi
 - **Cheat Sheets**:
   - [GNU Grep Manual](https://www.gnu.org/software/grep/manual/)
   - [Sed and Awk Cheat Sheet](https://www.gnu.org/software/sed/manual/sed.html)
-
