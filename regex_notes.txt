@@ -1,0 +1,35 @@
+> history | grep "grep"
+grep -E '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}' emails.txt
+grep -E '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}' emails.txt
+grep -E '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' emails.txt
+ps aux | grep 'nginx'
+ps aux | grep '[n]ginx'
+history | grep '(python)\1' /Users/chadthompsonsmith/
+history | grep -regex '(python)\1'
+grep -Eo '([0-9]{1,3}\.){3}[0-9]{1,3}' /var/log/syslog
+history | grep -E '(python)\1'
+history | grep -E '(python)'
+history | grep ("python")\1
+history | grep (python)\1
+history | grep git
+history | grep "git"
+history | grep "python"
+history | grep python
+cat dk_csv_downloader.py | grep [0-9a-z]
+cat dk_csv_downloader.py | grep [0-9]
+ps aux | grep "chad"
+ps aux | grep tail -n 10
+ps aux | grep head -n 10
+ps aux | grep "chadthompsonsmith"
+ps aux | grep python
+netstat -anp tcp | grep 5000
+python3 dk_api.py | grep "Pylon"
+python3 dk_api.py | grep "NFL"
+python3 dk_api.py | grep "NFl $15k Pylon"
+grep "cpclass-devopsew-bravo.pem"
+grep "grep" ~/.zsh_history
+grep "grep" ~/.config/fish/fish_history
+grep "grep" ~/.bash_history
+grep "grep" JL_practicals.txt
+grep history
+kubectl describe daemonset aws-node -n kube-system | grep Image

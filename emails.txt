@@ -1,0 +1,60 @@
+john.doe@example.com
+jane.smith@domain.org
+invalid-email@domain
+michael.brown@company.net
+susan.jones@website
+valid.email@domain.com
+another.valid@domain.co.uk
+invalid-email@domain.
+no-at-symbol.com
+correct.format@domain.io
+missing@tld
+valid.email@sub.domain.com
+invalid@domain,com
+GitHub Copilot
+The .* in the regular expression .*\.log$ is necessary to correctly match the entire path of files ending with .log. Let's break down why this is the case.
+
+Explanation of the Regular Expression
+.*:
+
+.: Matches any single character except a newline.
+*: Matches zero or more of the preceding element (in this case, any character).
+Together, .* matches any sequence of characters (including an empty sequence).
+\.log$:
+
+\.: Escapes the dot character, so it matches a literal dot.
+log: Matches the string "log".
+$: Anchors the match to the end of the string.
+Why .* is Necessary
+Full Path Matching: The find command with the -regex option matches the entire path of the file, not just the filename. Therefore, .* is used to match any characters leading up to the filename.
+Example: If you want to find all .log files in log, the full path might be /var/log/somefile.log. The .* part of the regex ensures that any characters before .log are matched.
+Incorrect Example
+'*\.log$':
+This regex would not work as intended because it does not account for the full path. The * alone does not match any characters; it needs to be preceded by a character or pattern to repeat.
+Correct Example
+'.*\.log$':
+This regex correctly matches any path ending with .log.
+Practical Example
+Explanation: This command finds all files (-type f) in log whose full path matches the regex .*\.log$, meaning any path ending with .log.
+Summary
+.*: Matches any sequence of characters, ensuring the regex can match the full path.
+\.: Escapes the dot to match a literal dot.
+log$: Matches the string "log" at the end of the path.
+Using .* ensures that the regex correctly matches the entire path of files ending with .log, which is necessary for the find command with the -regex option.
+
+tsmith4014
+do me a favor and write 10 sentences and randomly have some start or end with emails and some with emails in the middle and then some with no emails. just make up the sentences about eating hotdogs and doing coding
+
+GitHub Copilot
+Sure, here are 10 sentences with some containing emails and some without:
+
+I love eating hotdogs while coding, especially when I receive emails from my friends.
+Hotdogs are my favorite snack during long coding sessions.
+You can reach me at hotdoglover@example.com for more hotdog recipes.
+Coding and hotdogs go hand in hand, don't you think?
+Sometimes, I get so engrossed in coding that I forget to check my emails.
+My friend sent me an email about a new hotdog stand opening nearby.
+Eating hotdogs while debugging code is my idea of a perfect afternoon.
+If you have any questions about coding or hotdogs, email me at coder@example.com.
+I often take a break from coding to enjoy a hotdog and read my emails.
+There's nothing better than a hotdog after solving a tough coding problem.
